@@ -194,7 +194,6 @@
 <hole x="17.78" y="14.605" drill="0.6"/>
 <text x="128.905" y="24.13" size="1.27" layer="21" font="vector" ratio="12" rot="R90" align="top-right">A4988 Driver
 Expander</text>
-<text x="38.1" y="31.75" size="1.27" layer="22" font="vector" ratio="12" rot="MR0" align="top-center">EEE-1HA101UP</text>
 </plain>
 <libraries>
 <library name="RepRapjr">
@@ -824,7 +823,7 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="CONN-10681" x="19.05" y="-2.54" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U$7" library="RepRapjr" package="A4988BREAKOUT" value="A4988BREAKOUT" x="3.81" y="7.62" rot="R90"/>
-<element name="C3" library="SparkFun-Capacitors" package="PANASONIC_E" value="ECE-V1HA101UP" x="33.655" y="27.94" rot="R270"/>
+<element name="C3" library="SparkFun-Capacitors" package="PANASONIC_E" value="" x="33.655" y="27.94" rot="R270"/>
 <element name="C4" library="SparkFun-Capacitors" package="PANASONIC_E" value="" x="42.545" y="27.94" rot="R270"/>
 <element name="C5" library="SparkFun-Capacitors" package="PANASONIC_E" value="" x="42.545" y="17.78" rot="R90"/>
 <element name="C6" library="SparkFun-Capacitors" package="PANASONIC_E" value="" x="33.655" y="17.78" rot="R90"/>

@@ -2649,7 +2649,7 @@ Grid 5.00 mm&lt;p&gt;
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M03X2" device="SHROUD"/>
 <part name="U$7" library="RepRapjr" deviceset="A4988BREAKOUT" device=""/>
-<part name="C3" library="SparkFun-Capacitors" deviceset="CAP_POL" device="E" value="ECE-V1HA101UP"/>
+<part name="C3" library="SparkFun-Capacitors" deviceset="CAP_POL" device="E"/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="CAP_POL" device="E"/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="CAP_POL" device="E"/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="CAP_POL" device="E"/>
