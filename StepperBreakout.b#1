@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -66,7 +66,7 @@
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
@@ -180,16 +180,22 @@
 <text x="43.815" y="8.89" size="1.778" layer="21" font="vector" ratio="15" rot="R90" align="center">VMOT</text>
 <text x="134.62" y="24.13" size="1.27" layer="21" font="vector" rot="R90" align="center-right">hackaday.io
 /project/11900</text>
-<wire x1="19.05" y1="27.94" x2="3.81" y2="27.94" width="0.6096" layer="46"/>
-<wire x1="3.81" y1="27.94" x2="3.81" y2="7.62" width="0.6096" layer="46"/>
-<wire x1="3.81" y1="7.62" x2="19.05" y2="7.62" width="0.6096" layer="46"/>
+<wire x1="19.05" y1="29.21" x2="19.05" y2="18.415" width="0.6096" layer="46"/>
+<wire x1="19.05" y1="18.415" x2="16.51" y2="18.415" width="0.6096" layer="46"/>
+<wire x1="16.51" y1="13.335" x2="19.05" y2="13.335" width="0.6096" layer="46"/>
+<wire x1="19.05" y1="13.335" x2="19.05" y2="4.445" width="0.6096" layer="46"/>
+<wire x1="16.51" y1="13.335" x2="16.51" y2="5.08" width="0.6096" layer="46"/>
+<wire x1="16.51" y1="5.08" x2="1.27" y2="5.08" width="0.6096" layer="46"/>
+<wire x1="1.27" y1="5.08" x2="1.27" y2="25.4" width="0.6096" layer="46"/>
+<wire x1="1.27" y1="25.4" x2="16.51" y2="25.4" width="0.6096" layer="46"/>
+<wire x1="16.51" y1="25.4" x2="16.51" y2="18.415" width="0.6096" layer="46"/>
+<hole x="17.78" y="15.875" drill="0.6"/>
+<hole x="17.78" y="17.145" drill="0.6"/>
+<hole x="17.78" y="14.605" drill="0.6"/>
 <text x="128.905" y="24.13" size="1.27" layer="21" font="vector" ratio="12" rot="R90" align="top-right">A4988 Driver
 Expander</text>
 <text x="38.1" y="31.75" size="1.27" layer="22" font="vector" ratio="12" rot="MR0" align="top-center">100uF
 EEE-1HA101UP</text>
-<wire x1="19.05" y1="4.445" x2="19.05" y2="7.62" width="0.6096" layer="46"/>
-<wire x1="19.05" y1="27.94" x2="19.05" y2="29.21" width="0.6096" layer="46"/>
-<wire x1="19.05" y1="27.94" x2="19.05" y2="7.62" width="0.6096" layer="46"/>
 </plain>
 <libraries>
 <library name="RepRapjr">
@@ -669,9 +675,6 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
-<param name="AutoGrid" value="1"/>
-<param name="Efforts" value="0"/>
-<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -818,10 +821,10 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="24.765" y="18.415" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="24.765" y="18.415" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="JP1" library="SparkFun-Connectors" package="2X3-SHROUDED" value="" x="11.43" y="17.78" rot="MR0">
-<attribute name="PROD_ID" value="CONN-10681" x="21.59" y="35.56" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="JP1" library="SparkFun-Connectors" package="2X3-SHROUDED" value="" x="8.89" y="15.24" rot="R180">
+<attribute name="PROD_ID" value="CONN-10681" x="19.05" y="-2.54" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U$7" library="RepRapjr" package="A4988BREAKOUT" value="A4988BREAKOUT" x="6.35" y="25.4" rot="MR270"/>
+<element name="U$7" library="RepRapjr" package="A4988BREAKOUT" value="A4988BREAKOUT" x="3.81" y="7.62" rot="R90"/>
 <element name="C3" library="SparkFun-Capacitors" package="PANASONIC_E" value="EEE-1HA101UP" x="33.655" y="27.94" rot="R270"/>
 <element name="C4" library="SparkFun-Capacitors" package="PANASONIC_E" value="" x="42.545" y="27.94" rot="R270"/>
 <element name="C5" library="SparkFun-Capacitors" package="PANASONIC_E" value="" x="42.545" y="17.78" rot="R90"/>
@@ -1204,17 +1207,17 @@ design rules under a new name.</description>
 <contactref element="JP1" pad="6"/>
 <contactref element="U$7" pad="GND"/>
 <contactref element="U$7" pad="GND@0"/>
-<polygon width="0.6096" layer="1">
-<vertex x="4.445" y="8.255"/>
-<vertex x="18.415" y="8.255"/>
-<vertex x="18.415" y="27.305"/>
-<vertex x="4.445" y="27.305"/>
+<polygon width="0.6096" layer="16">
+<vertex x="1.905" y="24.765"/>
+<vertex x="15.875" y="24.765"/>
+<vertex x="15.875" y="5.715"/>
+<vertex x="1.905" y="5.715"/>
 </polygon>
 <contactref element="C3" pad="-"/>
 <contactref element="C4" pad="-"/>
 <contactref element="C5" pad="-"/>
 <contactref element="C6" pad="-"/>
-<wire x1="23.495" y1="20.915" x2="10.16" y2="15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="23.495" y1="20.915" x2="7.62" y2="17.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="STEP">
 <contactref element="U$4" pad="STEP"/>
@@ -1293,17 +1296,17 @@ design rules under a new name.</description>
 <signal name="N$29">
 <contactref element="U$7" pad="EN"/>
 <contactref element="JP1" pad="1"/>
-<wire x1="12.7" y1="20.32" x2="17.78" y2="26.67" width="0.6096" layer="16"/>
+<wire x1="10.16" y1="12.7" x2="15.24" y2="6.35" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$32">
 <contactref element="U$7" pad="DIR"/>
 <contactref element="JP1" pad="5"/>
-<wire x1="12.7" y1="15.24" x2="17.78" y2="8.89" width="0.6096" layer="16"/>
+<wire x1="10.16" y1="17.78" x2="15.24" y2="24.13" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$37">
 <contactref element="U$7" pad="STEP"/>
 <contactref element="JP1" pad="3"/>
-<wire x1="12.7" y1="17.78" x2="17.78" y2="11.43" width="0.6096" layer="16"/>
+<wire x1="10.16" y1="15.24" x2="15.24" y2="21.59" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$38">
 <contactref element="U$7" pad="VMOT"/>
@@ -1311,11 +1314,11 @@ design rules under a new name.</description>
 <signal name="LOPOWER">
 <contactref element="JP1" pad="2"/>
 <contactref element="U$7" pad="VDD"/>
-<wire x1="10.16" y1="20.32" x2="8.255" y2="20.32" width="0.6096" layer="16"/>
-<wire x1="8.255" y1="20.32" x2="7.62" y2="19.685" width="0.6096" layer="16"/>
-<wire x1="7.62" y1="19.685" x2="7.62" y2="12.065" width="0.6096" layer="16"/>
-<wire x1="7.62" y1="12.065" x2="6.985" y2="11.43" width="0.6096" layer="16"/>
-<wire x1="6.985" y1="11.43" x2="5.08" y2="11.43" width="0.6096" layer="16"/>
+<wire x1="7.62" y1="12.7" x2="5.715" y2="12.7" width="0.6096" layer="1"/>
+<wire x1="5.715" y1="12.7" x2="5.08" y2="13.335" width="0.6096" layer="1"/>
+<wire x1="5.08" y1="13.335" x2="5.08" y2="20.955" width="0.6096" layer="1"/>
+<wire x1="5.08" y1="20.955" x2="4.445" y2="21.59" width="0.6096" layer="1"/>
+<wire x1="4.445" y1="21.59" x2="2.54" y2="21.59" width="0.6096" layer="1"/>
 </signal>
 </signals>
 </board>
